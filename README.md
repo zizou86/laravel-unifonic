@@ -1,6 +1,6 @@
 # Laravel-Unifonic
 
-Start trading on Bittrex right away using your favorite PHP framework.
+Start send sms with Unifonic right away using your favorite PHP framework.
 
 ### Installation
 
