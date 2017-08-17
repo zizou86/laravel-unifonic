@@ -7,9 +7,9 @@ class UnifonicManager
 {
 
     /**
-     * @var AppSid
+     * @var App
      */
-    public $appsid;
+    public $app;
 
 
     /**
@@ -29,9 +29,9 @@ class UnifonicManager
      * @param AppContract $appsid
      * @return $this
      */
-    public function withCustomApp(AppContract $appsid)
+    public function withCustomApp(AppContract $app)
     {
-        $this->appsid = $appsid;
+        $this->app = $app;
         return $this;
     }
 
@@ -44,11 +44,11 @@ class UnifonicManager
      * @param array $urls
      * @return $this
      */
-    public function with($appsid = null, array $urls = null)
+    public function with($appsid, array $urls = null)
     {
         $urls = $urls ?: config('unifonic.urls');
-        $appsid = $appsid ?: config('unifonic.appsid.default');
-        $this->appsid = new App($appsid, $urls);
+        $this->app = new App($appsid, $urls);
+
         return $this;
     }
 
@@ -62,10 +62,10 @@ class UnifonicManager
      */
     public function __call($method, $parameters)
     {
-        if (!method_exists($this->appsid, $method)) {
+        if (!method_exists($this->app, $method)) {
             abort(500, "Method $method does not exist");
         }
-        return call_user_func_array([$this->appsid, $method], $parameters);
+        return call_user_func_array([$this->app, $method], $parameters);
     }
 
 }

@@ -1,4 +1,10 @@
 <?php
+/**
+ * User:  aziz
+ * Email: aziz.trabelsi@gmail.com
+ * Date:  8/17/2017 AD
+ * Time:  07:12
+ */
 
 namespace Zizou86\Unifonic;
 
@@ -23,9 +29,10 @@ class App implements AppContract
      * @param string $appsid
      * @param array $urls
      */
-    public function __construct(string $appsid, array $urls) {
+    public function __construct(string $appsid, array $urls = null) {
+        $urls = $urls ?: config('unifonic.urls');
         $this->messagesUrl  = array_get($urls, 'messages');
-        $this->appsid    = $appsid;
+        $this->appsid = $appsid;
     }
 
 
