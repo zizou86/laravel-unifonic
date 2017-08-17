@@ -42,7 +42,7 @@ Please refer to the [Api Documentation](http://docs.unifonic.apiary.io/) for mor
 ```
 use Zizou86\Unifonic\Unifonic;
 
-// public API methods
+// messages API methods
 Unifonic::send(int $recipient,string $message);
 Unifonic::sendBulk(array $recipient, string $message);
 
