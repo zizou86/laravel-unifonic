@@ -1,13 +1,13 @@
 {
   "name": "zizou86/laravel-unifonic",
   "description": "Package to use Unifonic API",
-  "keywords": ["laravel", "unifonic"],
+  "keywords": ["laravel", "unifonic","api"],
   "license": "MIT",
   "authors": [
     {
       "name": "Aziz Trabelsi",
       "email": "aziz.trabelsi@gmail.com"
-    },
+    }
   ],
   "require": {
     "php": ">=7.0.0",
