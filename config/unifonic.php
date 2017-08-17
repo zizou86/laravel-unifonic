@@ -10,7 +10,7 @@ return [
     | Application key for unifonic API.
     |
      */
-    'appsids' => [
+    'appsid' => [
         'default' => env('UNIFONIC_APPS_ID', '')
     ],
 

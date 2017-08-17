@@ -1,6 +1,6 @@
 <?php
 
-namespace zizou86\Unifonic;
+namespace Zizou86\Unifonic;
 
 use Illuminate\Support\ServiceProvider;
 

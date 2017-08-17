@@ -6,7 +6,7 @@
  * Time:  07:12
  */
 
-namespace zizou86\Unifonic;
+namespace Zizou86\Unifonic;
 
 
 class App implements AppContract

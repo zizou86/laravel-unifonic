@@ -1,9 +1,8 @@
 <?php
 
-namespace zizou86\Unifonic;
+namespace Zizou86\Unifonic;
 
 use Illuminate\Support\Facades\Facade;
-
 
 
 class Unifonic extends Facade
