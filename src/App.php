@@ -1,10 +1,4 @@
 <?php
-/**
- * User:  aziz
- * Email: aziz.trabelsi@gmail.com
- * Date:  8/17/2017 AD
- * Time:  07:12
- */
 
 namespace Zizou86\Unifonic;
 
