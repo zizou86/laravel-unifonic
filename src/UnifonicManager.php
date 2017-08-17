@@ -48,7 +48,7 @@ class UnifonicManager
     {
         $urls = $urls ?: config('unifonic.urls');
         $appsid = $appsid ?: config('unifonic.appsid.default');
-        $this->appsid = new Client($appsid, $urls);
+        $this->appsid = new App($appsid, $urls);
         return $this;
     }
 
