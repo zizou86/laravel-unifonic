@@ -47,3 +47,22 @@ Unifonic::send(int $recipient,string $message);
 Unifonic::sendBulk(array $recipient, string $message);
 
 ```
+
+If you use many apps id, you can do this :
+
+```
+use Zizou86\Unifonic\Unifonic;
+
+$sms = new App('second');
+```
+
+The key 'second' will be defined in your config/unifonic.php
+
+```
+
+'appsid' => [
+    'default' => env('UNIFONIC_APPS_ID', ''),
+    'second' => env('UNIFONIC_SECOND_APPS_ID', '')
+],
+
+```

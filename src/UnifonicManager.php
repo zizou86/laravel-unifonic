@@ -17,9 +17,7 @@ class UnifonicManager
      */
     public function __construct()
     {
-        $this->with(
-            config('unifonic.appsid.default')
-        );
+        $this->with('default');
     }
 
 
@@ -44,9 +42,11 @@ class UnifonicManager
      * @param array $urls
      * @return $this
      */
-    public function with($appsid, array $urls = null)
+    public function with($appskey, array $urls = null)
     {
         $urls = $urls ?: config('unifonic.urls');
+        $appsid = config('unifonic.appsid.'.$appskey);
+
         $this->app = new App($appsid, $urls);
 
         return $this;

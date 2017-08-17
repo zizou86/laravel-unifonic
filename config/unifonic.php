@@ -11,7 +11,9 @@ return [
     |
      */
     'appsid' => [
-        'default' => env('UNIFONIC_APPS_ID', '')
+        'default' => env('UNIFONIC_APPS_ID', ''),
+        // OPTIONAL
+        'second' => env('UNIFONIC_SECOND_APPS_ID', '')
     ],
 
 
