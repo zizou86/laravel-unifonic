@@ -27,6 +27,7 @@ return [
      */
     'urls' => [
         'messages'  => 'http://api.unifonic.com/rest/Messages/',
+        'account'  => 'http://api.unifonic.com/rest/Account/',
     ],
 
 ];
