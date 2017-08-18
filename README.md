@@ -45,6 +45,8 @@ use Zizou86\Unifonic\Unifonic;
 // messages API methods
 Unifonic::send(int $recipient,string $message);
 Unifonic::sendBulk(array $recipient, string $message);
+Unifonic::getMessageIDStatus(int $messageId);
+Unifonic::getBalance();
 
 ```
 
